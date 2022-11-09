@@ -231,7 +231,7 @@ header ul .animation{
 }
 
 .bg1{
-    background-image: url(/img/bg1.jpg);
+    background-image: url(img/bg1.jpg);
     position: relative;
     background-size: cover;
     filter: brightness(40%);
