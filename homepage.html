@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            HADINATA BATIK
+        </a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li><!--
+        --><li><a href="product.html">Product</a></li><!--
+        --><li><a href="store.html">Store</a></li><!--
+        --><div class="animation start-home"></div>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 1);
+        })
+    </script>
+    <div class="content">
+        <div class="pt1">
+            <div class="bg1"></div>
+            <div class="textover1">
+                <h2>BATIK</h2>
+                <p>Identitas Budaya Bangsa Yang Tak Lekang Dimakan Waktu</p>
+            </div>
+        </div>
+        <div class="pt2">
+            <div id="title"><b>Hadinata Batik</b></div>
+            <p>Brand batik yang menjunjung tinggi nilai tradisi yang terfokus pada tradisi batik. 
+                Dengan memadukan corak khas batik dengan style yang modern agar batik dapat diterima di zaman yang berkembang dengan pesat namun tetap mempertahankan nilai tradisinya.</p>
+        </div>
+        <div class="ptSlider">
+            <div class="center">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <div class="slide first">
+                            <a href="https://www.tokopedia.com/hadinatabatik/adinata-batik-blouse-batik-ayunina-xl?extParam=whid%3D6553458">
+                                <img src="img/slider1.jpg" alt="" style="max-width: 100%;">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.tokopedia.com/hadinatabatik/freya-blouse-adinata-batik-xl?extParam=whid%3D6553458">
+                                <img src="img/slider2.jpg" alt="" style="max-width: 100%;">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.tokopedia.com/hadinatabatik/fadhil-freya-hem-panjang-m?extParam=whid%3D6553458">
+                                <img src="img/slider3.jpg" alt="" style="max-width: 100%;">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://www.tokopedia.com/hadinatabatik/hadinata-batik-pria-kemeja-panjang-leon-lyodra-s?extParam=whid%3D6553458">
+                                <img src="img/slider4.jpg" alt="" style="max-width: 100%;">
+                            </a>
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var counter =1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </div>
+        </div>
+        <div class="pt4"></div>
+        <div class="pt3">
+        </div>
+        <div class="ptvideo">
+            <iframe width="672" height="378" src="https://www.youtube.com/embed/ZY6mTmX3078" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="pt6"></div>
+        <div class="pt5"></div>
+    </div>
+    <footer>
+        <div class="textFooter">
+            <ul class="left">
+                <li>More About Us</li>
+                <li>Jl. Bhayangkara No. 59 Laweyan Surakarta</li>
+                <li>+62 821-1578-5757</li>
+                <li>adinatabatik5@gmail.com</li>
+            </ul>
+            <ul class="right">
+                <li>Our Social Media</li>
+                <li><a href="https://www.instagram.com/adinatabatik_indonesia/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" height="30" class="social"></a></li>
+                <li><a href="https://facebook.com/"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051360.png" alt="" height="30" class="social"></a></li>
+                <li><a href="https://twitter.com/"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051382.png" alt="" height="30" class="social"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

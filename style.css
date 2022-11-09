@@ -1,0 +1,509 @@
+/*slider start*/
+.slider{
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 900px;
+    height: 500px;
+}
+/*slider end*/
+
+/*manual navigation start*/
+.navigation-manual{
+    position: absolute;
+    width: 900px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #2D2424;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #aa7539;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+/*manual navigation end*/
+
+/*automatic navigation start*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid #2D2424;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #aa7539;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #aa7539;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #aa7539;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #aa7539;
+}
+/*automatic navigation end*/
+
+@font-face {
+    font-family: fenix;
+    src: url(font/Fenix-Regular.ttf);
+}
+
+*{
+    font-family: fenix;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*navbar start*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    margin-left: 23px;
+    margin-right: 23px;
+    text-align: center;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: black;
+}
+
+header ul li:nth-child(1){
+    width: 48px;
+}
+
+header ul .start-home,
+header ul li:nth-child(1):hover~.animation{
+    width: 48px;
+    margin-right: 204px;
+}
+
+header ul li:nth-child(2){
+    width: 65.6px;
+}
+
+header ul .start-product,
+header ul li:nth-child(2):hover~.animation{
+    width: 65.6px;
+    margin-right: .7px;
+}
+
+header ul li:nth-child(3){
+    width: 76.4px;
+}
+
+header ul .start-about,
+header ul li:nth-child(3):hover~.animation{
+    width: 44.4px;
+    margin-right: -205px;
+}
+
+header ul .animation{
+    position: absolute;
+    height: 10%;
+    bottom: 0;
+    z-index: 1;
+    background: #aa7539;
+    border-radius: 8px;
+    transition: all .6s ease 0s;
+}
+/*navbar end*/
+
+/*content start*/
+.pt1{
+    margin-top: 0%;
+    height: 700px;
+    width: 100%;
+}
+
+.bg1{
+    background-image: url(/img/bg1.jpg);
+    position: relative;
+    background-size: cover;
+    filter: brightness(40%);
+    margin-top: 0%;
+    height: 700px;
+    width: 100%;
+}
+
+.textover1{
+    position: absolute;
+    color: #fff;
+    top: 250px;
+    width: 60%;
+    left: 20%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.textover1 p{
+    font-weight: 10;
+}
+
+.center{
+    margin-left: 17%;
+}
+
+.pt2{
+    background: #E0C097;
+    width: 100%;
+    height: 450px;
+    color: #000; 
+    padding-top: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.pt2 p{
+    font-size: 27px;
+}
+
+#title{
+    font-size: 50px;
+}
+
+.ptSlider{
+    width: 100%;
+    height: 500px;
+    background: #E0C097;
+}
+
+.pt3{
+    background: #000;
+    background-image: url(https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/28/c15d0f19-e0e7-451b-82b8-b6c5c608035b.jpg);
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.pt4{
+    background-image: url(https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/28/2a99803d-b492-42a9-9ef9-236da30b915b.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.ptvideo{
+    background: #E0C097;
+    position: relative;
+    height: 378px;
+}
+
+.ptvideo iframe{
+    margin-left: 25%;
+}
+
+.pt5{
+    height: 400px;
+    background-image: url(https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/24/0502aa79-1848-4b24-a484-8191ca42bb99.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position-y: -700px;
+}
+
+.pt6{
+    height: 400px;
+    background-image: url(https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/17/91d67b9b-bd9d-4d4d-b15e-bd740eab8861.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position-y: -900px;
+    margin: 0;
+}
+/*content end*/
+
+/*product start*/
+.contentProduct{
+    background: #E0C097;
+    width: 100%;
+    height: 2500px;
+}
+
+.top{
+    z-index: 1;
+}
+
+.men{
+    z-index: 2;
+}
+
+.women{
+    z-index: 3;
+}
+
+.kids{
+    z-index: 4;
+}
+
+.kain{
+    z-index: 5;
+}
+
+.top,
+.men,
+.women,
+.kids,
+.kain{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+    transition: 1.3s ease 0s;
+}
+
+.contentProduct.load .men{
+    margin-top: 500px;
+}
+
+.contentProduct.load .women{
+    margin-top: 1000px;
+}
+
+.contentProduct.load .kids{
+    margin-top: 1500px;
+}
+
+.contentProduct.load .kain{
+    margin-top: 2000px;
+}
+
+.top .bg-top,
+.men .bg-men,
+.women .bg-women,
+.kids .bg-kids,
+.kain .bg-kain{
+    height: 500px;
+    background-size: cover;
+    background-position-y: center;
+    filter: brightness(50%);
+}
+
+.top .bg-top{
+    background: #2D2424;
+}
+
+.title-top{
+    color: #fff;
+    float: left;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    z-index: 1;
+    font-size: 60px;
+}
+
+.men .bg-men{
+    background-image: url(https://cdn.idntimes.com/content-images/community/2022/06/20220627-143447-329ae2b286ff7799fbbec7d4597d307a-36a35f65d57558ceeab486868ace3cca.jpg);
+}
+
+.cards{
+    height: 60%;
+    top: 20%;
+    width: 50%;
+    left: 25%;
+    position: inherit;
+    z-index: inherit;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.card{
+    height: 100%;
+    width: 40%;
+    text-align: center;
+}
+
+.card img{
+    height: 250px;
+    border-radius: 10px;
+    transition: .9s ease 0s;
+}
+
+.card img:hover{
+    zoom: 97%;
+    filter: brightness(70%);
+}
+
+.card a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#kain-batik{
+    left: 40%;
+}
+
+.women .bg-women{
+    background-image: url(https://www.herworld.co.id/gallery/teaser/Model-Blazer-Batik-untuk-Wanita-Gemuk-2_6720220118164234ldYp0C.jpg);
+}
+.kids .bg-kids{
+    background-image: url(https://pbs.twimg.com/media/CO8aBRHUcAAQy2W.jpg);
+}
+.kain .bg-kain{
+    background-image: url(https://www.pegipegi.com/travel/wp-content/uploads/2016/06/gambar-kain-batik.jpg);
+}
+/*product end*/
+
+/*store start*/
+/*store end*/
+
+/*footer start*/
+footer{
+    background: #2D2424;
+    height: 270px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.textFooter{
+    display: flex;
+    margin-left: 15%;
+    width: 70%;
+    color: #fff;
+}
+
+.textFooter .left,
+.textFooter .right{
+    margin-top: 0px;
+    padding-top: 25px;
+    width: 300px;
+    list-style: none;
+    list-style-type: none;
+}   
+
+.social{
+    margin-left: 40px;
+}
+
+.textFooter .left li,
+.textFooter .right li{
+    margin: 15px;
+}
+
+.textFooter .right{
+margin-left: 40%;
+}
+
+/*footer end*/

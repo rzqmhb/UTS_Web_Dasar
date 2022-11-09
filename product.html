@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            HADINATA BATIK
+        </a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li><!--
+        --><li><a href="product.html">Product</a></li><!--
+        --><li><a href="store.html">Store</a></li><!--
+        --><div class="animation start-product"></div>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <div class="contentProduct">
+        <div class="top">
+            <div class="title-top">
+                Produk Kami
+            </div>
+            <div class="bg-top"></div>
+        </div>
+        <div class="men">
+            <div class="cards">
+                <div class="card">
+                    <a href="https://www.tokopedia.com/hadinatabatik/etalase/hem-pendek">
+                        Kemeja Pendek
+                        <img src="/img/shortshirt.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.tokopedia.com/hadinatabatik/etalase/hem-panjang">
+                        Kemeja Panjang
+                        <img src="/img/longshirt.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="bg-men"></div>
+        </div>
+        <div class="women">
+            <div class="cards">
+                <div class="card">
+                    <a href="https://www.tokopedia.com/hadinatabatik/etalase/dress-batik">
+                        Dress
+                        <img src="/img/dress.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.tokopedia.com/hadinatabatik/etalase/blouse">
+                        Blouse
+                        <img src="/img/blouse.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="bg-women"></div>
+        </div>
+        <div class="kids">
+            <div class="cards">
+                <div class="card">
+                    <a href="https://www.tokopedia.com/hadinatabatik/hadinata-batik-kemeja-anak-hugo-4?extParam=whid%3D6553458">
+                        Kemeja Anak
+                        <img src="/img/boyshirt.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.tokopedia.com/hadinatabatik/hadinata-batik-kemeja-anak-hugo-4?extParam=whid%3D6553458">
+                        Dress Anak
+                        <img src="/img/girldress.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="bg-kids"></div>
+        </div>
+        <div class="kain">
+            <div class="cards" id="kain-batik">
+                <div class="card">
+                    <a href="https://www.tokopedia.com/hadinatabatik/etalase/kain">
+                        Kain Batik
+                        <img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/23/2ac9813b-834f-43ee-82b9-ba28c2623364.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="bg-kain"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.onload = function(){
+            var content = document.querySelector('.contentProduct');
+            content.classList.toggle("load");
+        }
+    </script>
+    <footer>
+        <div class="textFooter">
+            <ul class="left">
+                <li>More About Us</li>
+                <li>Jl. Bhayangkara No. 59 Laweyan Surakarta</li>
+                <li>+62 821-1578-5757</li>
+                <li>adinatabatik5@gmail.com</li>
+            </ul>
+            <ul class="right">
+                <li>Our Social Media</li>
+                <li><a href="https://www.instagram.com/adinatabatik_indonesia/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" height="30" class="social"></a></li>
+                <li><a href="https://facebook.com/"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051360.png" alt="" height="30" class="social"></a></li>
+                <li><a href="https://twitter.com/"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051382.png" alt="" height="30" class="social"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

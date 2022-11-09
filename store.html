@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            HADINATA BATIK
+        </a>
+        <ul>
+            <li><a href="homepage.html">Home</a></li><!--
+        --><li><a href="product.html">Product</a></li><!--
+        --><li><a href="store.html">Store</a></li><!--
+        --><div class="animation start-about"></div>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <footer>
+        <div class="textFooter">
+            <ul class="left">
+                <li>More About Us</li>
+                <li>Jl. Bhayangkara No. 59 Laweyan Surakarta</li>
+                <li>+62 821-1578-5757</li>
+                <li>adinatabatik5@gmail.com</li>
+            </ul>
+            <ul class="right">
+                <li>Our Social Media</li>
+                <li><a href="https://www.instagram.com/adinatabatik_indonesia/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="" height="30" class="social"></a></li>
+                <li><a href="https://facebook.com/"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051360.png" alt="" height="30" class="social"></a></li>
+                <li><a href="https://twitter.com/"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051382.png" alt="" height="30" class="social"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
